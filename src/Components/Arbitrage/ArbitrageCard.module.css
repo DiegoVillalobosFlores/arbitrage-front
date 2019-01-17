@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    margin: 16px;
+    padding: 16px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "select1 . select2"
+                         "diagram diagram diagram"
+                         "price . buttons"
+}
+
+.selects2,
+.selects1 {
+    grid-area: select1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.selects2 {
+    grid-area: select2;
+}
+
+.currency {
+    grid-area: currency;
+    font-size: var(--card-text-size);
+}
+
+.price {
+    grid-area: price;
+    font-size: var(--card-text-size);
+}
+
+.diagram {
+    grid-area: diagram;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-self: center;
+    font-size: var(--card-text-size);
+    margin: 16px;
+}

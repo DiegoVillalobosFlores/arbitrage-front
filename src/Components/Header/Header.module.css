@@ -1,0 +1,24 @@
+.container {
+    display: grid !important;
+    padding: 16px;
+    background-color: whitesmoke !important;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "menu title currency";
+}
+
+.title {
+    grid-area: title;
+    color: black;
+    text-align: center;
+}
+
+.menu-icon {
+    grid-area: menu;
+    color: black;
+    cursor: pointer;
+}
+
+.list {
+    width: 250px;
+    color: black;
+}
